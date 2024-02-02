@@ -1,0 +1,267 @@
+.bg-main{
+    background-color: var(--bg-main-gray);
+}
+
+/*Hero showcase section*/
+
+.hero{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    place-content: left;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.hero-showcase{
+    position: absolute;
+    top: 0;
+    height: 100dvh;
+    box-sizing: border-box;    
+}
+
+.glassed{
+    z-index: 2;
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgba(0,0,0,0) 100%);
+}
+
+.hero-particles{
+    z-index: 1;
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+}
+
+.hero-img{
+    z-index: 3;
+    width: 40%;
+    padding: 10px;
+}
+
+.hero-text{
+    z-index: 3;
+    font-weight: 500;
+    font-size: 9dvh;
+    text-align: left;
+    mix-blend-mode: difference;
+    text-shadow: 0px 0px 10px black;
+}
+
+.scroller-zone{
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 15dvh;
+    padding-left: 10dvw;
+    align-items: center;
+}
+
+.scroller{
+    position: relative;
+    padding-top: 10dvh;
+    padding-bottom: 1dvh;
+    width: 7dvw;
+    height: 5dvh;
+    fill: #fff;
+}
+
+/* navigation bar */
+.bi{
+    display: none;
+}
+
+.bi-icon{
+    height: 50%;
+    width: -webkit-fill-available;
+    fill: var(--txt-main-white);
+}
+
+.bi-icon:hover{
+    text-shadow: 0px 0px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav{
+    z-index: 20;
+    top: 0;
+    width: 100dvw;
+    height: 10dvh;
+    background-color: rgba(2, 2, 2, 50%);
+    position: sticky;
+    backdrop-filter: blur(25px);
+}
+.nav ul{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    align-content: center;
+}
+
+.nav ul li {
+    padding: 0 25px 0 25px;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    list-style: none;
+    transition: 0.2s;
+}
+
+.nav ul li:hover {
+    color: aquamarine;
+    text-shadow: 0px 0px 10px;
+    cursor: pointer;
+    transition: color-bind 0.2s;
+}
+
+.nav ul li a{
+    place-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav ul li a span{
+    color: var(--txt-main-white);
+    padding: 25px;
+
+    transition: color-bind 0.2s;
+}
+
+.nav ul li a span:hover { 
+    color: aquamarine;
+    cursor: pointer;
+    transition: color-bind 0.2s;
+}
+
+.nav-text{
+    color: white;
+    transition: color-bind 0.2s;
+}
+
+.nav-text:hover{
+    color: aquamarine;
+    text-shadow: 0px 0px 10px aquamarine ;
+    transition: color-bind 0.2s;
+}
+
+.targeted-page{
+    border-bottom: solid 2px  #fff;
+}
+/*------Content-------*/
+
+.title{
+    padding: 2rem;
+    font-size: 5dvh;
+}
+
+.subtitle{
+    font-size: 3dvh;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.paragraph{
+    font-size: 2dvh;
+}
+
+.content-article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-content: center;
+}
+
+.content-img{
+    width: 90%;
+    height: auto;
+    margin: 2rem 0 2rem;
+    border-radius: 17px;
+    box-shadow: 5px 5px 25px #000;
+}
+
+/*------Footer--------*/
+
+.footer-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.footer-ref{
+    text-decoration: none;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-icon{
+    width: 3rem;
+}
+
+@media (max-width: 890px) {
+
+    .hero{
+        flex-direction: column-reverse;
+        place-content: center;
+        background-image: url(../../public/images/cpu-white.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .scroller-zone{
+        padding: 2rem;
+    }
+
+    .hero-text{
+
+        font-size: 2.5rem;
+        text-align: center ;
+    }
+
+    .hero-showcase{
+        display: none;
+    }
+
+    .glassed{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 90%) 50%, rgba(0,0,0,0) 100%);
+    }
+
+    .particle-purple{
+        width: 6rem;
+    }
+
+    .nav-text{
+        display:none ;
+    }
+
+    .bi{
+        display:block ;
+    }
+
+    .section{
+        padding: 20px;
+    }
+
+    .nav ul li:hover {
+        border: solid var(--txt-main-white);
+        border-radius: 10%;
+        border-right: 5px;
+        border-left: 5px;
+        transition: 0.2s;
+    }
+
+  }

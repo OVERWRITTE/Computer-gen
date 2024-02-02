@@ -1,0 +1,63 @@
+:root {
+ --bg-main-gray: #18181b;
+ --bg-secondary-gray: #4f4e4e;
+ --bg-footer: #0e0e0e;
+
+ --txt-main-white: #dddddd;
+
+ --robins-egg-blue-50: #f0fdfb;
+ --robins-egg-blue-100: #cbfcf6;
+ --robins-egg-blue-200: #96f9ef;
+ --robins-egg-blue-300: #5aeee4;
+ --robins-egg-blue-400: #28d9d2;
+ --robins-egg-blue-500: #11d0cc;
+ --robins-egg-blue-600: #099898;
+ --robins-egg-blue-700: #0c7879;
+ --robins-egg-blue-800: #0f5e60;
+ --robins-egg-blue-900: #114f50;
+ --robins-egg-blue-950: #032d30;
+
+
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100dvw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--bg-main-gray);
+}
+
+#main{
+    height: 100%;
+}
+
+.content-area{
+    width: 100dvw;
+    height: auto;
+}
+
+.section{
+    padding: 0 18% 0 18%;
+}
+
+footer{
+    width: 100dvw;
+    background-color: var(--bg-footer);
+}
